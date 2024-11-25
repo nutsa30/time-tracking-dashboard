@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Overpass:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+  margin: auto;
+  width: 100vw;
+}
+body{
+  font-family: "Rubik", serif;
+  background-color:hsl(226, 43%, 10%);
+  margin: auto;
+  
+}
+
+
+
+.time-tracker{
+  
+
+  margin: auto;
+
+
+    
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  
+}
+
+/*profileCard*/
+/*profileCard*/
+
+
+.person-card-container{
+  display: flex;
+  flex-direction: column;
+  height: 518px;
+  width: 255px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(28, 32, 75, 1);
+  color: white;
+  grid-row: 1/3;
+ 
+  
+
+}
+
+.profile-card{
+  display: flex;
+  flex-direction: column;
+  height: 354px;
+  width: 255px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(87, 71, 234, 1);
+  color: white;
+  
+  
+}
+
+.profile-card img{
+  height: 78px;
+  width: 78px;
+  margin: 37px 32px;
+}
+
+.profile-card img:hover{
+  border:3px solid white ;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.profile-card small{
+  margin-left: 32px;
+  font-size: 15px;
+  color: rgba(187, 192, 255, 1);
+}
+
+.profile-card h2{
+  margin-left: 32px;
+  font-size: 40px;
+  font-weight:100;
+  margin-top: 3px;
+  
+}
+
+.profile-card-times{
+  color: rgba(112, 120, 201, 1);
+  font-size: 18px;
+  font-weight: 200;
+  margin-left: 32px;
+  margin-top: 15px;
+  cursor: pointer;
+
+}
+
+
+
+
+/*TodoTaskscard*/
+/*TodoTaskscard*/
+
+
+.to-do-card{
+
+
+ 
+  
+
+
+  
+  width: 255px;
+  background-color: rgba(28, 32, 75, 1);
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+  position: relative;
+  margin-top: 45px;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+}
+
+.back-image{
+   height: 200px;
+  width: 255px;
+  border-radius: 15px;
+  background-color:rgb(0, 255, 179);
+  margin-top: -45px;
+  position: absolute;
+  z-index:-1; 
+  
+  
+
+
+
+}
+.info-card{
+
+  
+   position: absolute;
+  z-index: 2;
+  mix-blend-mode: difference;
+  margin-top: -20px;
+  height: 200px;
+  
+  
+}
+
+
+.back-image img{
+  
+  margin-left: 60%;
+  object-fit: cover;
+}
+
+.to-do-card:hover{
+  background-color: rgba(51, 57, 122, 1);
+}
+
+.to-do-name{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -20px;
+}
+.to-do-name p{
+  margin-left:30px ;
+  margin-top: 75px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.to-do-name img{
+  height: 5px;
+  width: 20px;
+  color: rgba(187, 192, 255, 1);
+  cursor: pointer;
+  margin-left: 100px;
+  margin-top: 87px;
+}
+
+
+
+
+.to-do-hours{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+
+  
+}
+
+.to-do-hours h2{
+  font-size: 56px;
+  font-weight: 100;
+  margin: 24px 0px;
+
+}
+
+.to-do-hours small{
+  font-size: 14px;
+  font-weight: 400;
+  color:rgba(187, 192, 255, 1) ;
+  
+  
+
+}
+
+@media (max-width: 431px) {
+
+  body, html {
+overflow-x: hidden;
+    
+  }
+  
+  .time-tracker {
+    margin-top: 20px;
+  
+
+ 
+ 
+  
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 40px; 
+  }
+
+  .to-do-card {
+    width: 327px; 
+    height: 122px;
+    box-sizing: border-box; 
+  }
+
+  .person-card-container{
+    width: 327px;
+    height: 203px;
+    display: flex;
+  }
+  .profile-card{
+    width: 327px;
+    height: 133px;
+    display: flex;
+   flex-direction: row;
+   
+
+  }
+    
+
+  .profile-card h2{
+    margin: 80px 0px 40px -90px;
+    font-size: 20px;
+    width: 170px;
+  }
+ 
+
+  .small{
+    display: flex;
+    margin:50px  20px 30px -10px !important;
+  }
+
+  .profile-card-times{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 0px;
+    
+  }
+    
+
+  .back-image{
+    width: 325px;
+    height: 133px;
+  }
+
+  .to-do-name img{
+    margin-left: 200px;
+    margin-bottom: 30px;
+
+    margin-top: 80px;
+  }
+
+  .to-do-hours{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .to-do-hours h2{
+    
+    font-size: 30px;
+    margin-top: -10px;
+  }
+
+ 
+  
+
+}
+
